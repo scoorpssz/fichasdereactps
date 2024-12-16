@@ -11,7 +11,7 @@ export default function Home() {
   const [project_name] = useState<string>("League of Heroes");
 
   return (
-    <div className={styles.page}>
+    <div>
       
       <Header my_name={my_name} project_name={project_name} />
       

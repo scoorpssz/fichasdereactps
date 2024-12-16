@@ -25,7 +25,7 @@ const heroesList = [
     },
     {
         id: 5,
-        image: 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/bf/AMQM_SUIT.png/revision/latest?cb=20240122064125',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtJvZJ-0eHzy-9vRiBj432nNZKzR9fBB1f3w&s',
         name: 'Homem Formiga',
         super_power: 'Turning small',
     },
