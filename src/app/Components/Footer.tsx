@@ -1,7 +1,7 @@
 const Footer = () => {
     return(
         <div>
-          <h1>League of Heroes, desenvolvido por José Cláudio</h1>  
+          <h1>League of Heroes - Copyright © 2024 by José Cláudio</h1>  
         </div>  
     )
 }
