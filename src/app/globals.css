@@ -1,3 +1,4 @@
+/* Reset de margens e fontes globais */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -5,15 +6,16 @@ body {
   color: #333;
 }
 
+/* Container para garantir que a altura mínima seja sempre 100vh */
 .container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  position: relative;
 }
 
+/* Cabeçalho fixo no topo */
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -22,6 +24,7 @@ body {
   padding: 15px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 100; /* Garantir que o cabeçalho fique acima do conteúdo */
 }
 
 .header h1 {
@@ -35,23 +38,26 @@ body {
   font-style: italic;
 }
 
+/* Conteúdo da página com padding-top suficiente para não ser coberto pelo cabeçalho */
 .content {
   flex: 1;
-  padding: 100px 20px 20px;  
+  padding: 100px 20px 20px; /* Espaço para evitar que o conteúdo seja coberto pelo cabeçalho fixo */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Grid de heróis */
 .heroes-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
   margin-top: 20px;
   width: 100%;
-  max-width: 800px;   
+  max-width: 800px;
 }
 
+/* Cartão de cada herói */
 .hero-card {
   background: white;
   border: 1.5px solid #555;
@@ -66,12 +72,15 @@ body {
   height: auto;
   border-radius: 8px;
 }
+
+/* Rodapé fixo no fundo */
 .footer {
-  position: absolute;
+  position: fixed;
   background-color: #005091;
   text-align: center;
   padding: 10px;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
   bottom: 0;
   width: 100%;
+  z-index: 100; /* Para garantir que o rodapé fique acima do conteúdo se houver overflow */
 }
