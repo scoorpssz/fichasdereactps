@@ -1,9 +1,9 @@
-const Loader = () =>{
+const Loader = () => {
     return (
-        <div>
-            <img src="/Loader.gif"/>
-        </div>
-    )
-}
-
-export default Loader;
+      <div className="loader-overlay">
+        <img src="/Loader.gif" alt="Loading..." />
+      </div>
+    );
+  };
+  
+  export default Loader;
