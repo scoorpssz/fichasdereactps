@@ -6,12 +6,9 @@ import Content from './Components/Content';
 export default function Home() {
   return (
    <div>
-    <Header></Header>
+    <Header ></Header>
     <Content></Content>
-    <div className="Footer">
-       <Footer></Footer>
-    </div>
-   
+    <Footer></Footer> 
    </div>
   );
 }

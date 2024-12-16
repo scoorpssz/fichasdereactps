@@ -1,4 +1,4 @@
-.page {
+page {
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
@@ -69,9 +69,9 @@
   border: none;
   border: 1px solid transparent;
   transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
+  background 0.2s,
+  color 0.2s,
+  border-color 0.2s;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -92,38 +92,11 @@ a.secondary {
   min-width: 180px;
 }
 
-.Footer {
+.footer {
   grid-row-start: 3;
   display: flex;
+  position: absolute;
   gap: 24px;
-}
-
-.Footer a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.Footer img {
-  flex-shrink: 0;
-}
-
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-
-  .Footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
 }
 
 @media (max-width: 600px) {
@@ -154,7 +127,7 @@ a.secondary {
     min-width: auto;
   }
 
-  .Footer {
+  .footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
